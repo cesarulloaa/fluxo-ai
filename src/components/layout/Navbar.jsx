@@ -129,7 +129,7 @@ const Navbar = ({ isDarkMode, toggleDarkMode }) => {
             ),
           )}
           <a
-            href="https://wa.me/1829XXXXXXX?text=Hola,%20quiero%20más%20información%20sobre%20sus%20servicios"
+            href="https://wa.me/182986122740?text=Hola,%20quiero%20más%20información%20sobre%20sus%20servicios"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setMobileMenuOpen(false)}
