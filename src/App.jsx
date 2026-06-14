@@ -4,6 +4,7 @@ import HomePage from "./components/sections/HomePage";
 import AboutUs from "./components/sections/AboutUs";
 import { useState } from "react";
 import { globalStyles } from "./styles/globalStyles";
+import { HelmetProvider } from "react-helmet-async";
 
 const Layout = ({ isDarkMode, toggleDarkMode }) => {
   const location = useLocation();
@@ -27,6 +28,7 @@ const App = () => {
   const toggleDarkMode = () => setIsDarkMode(!isDarkMode);
 
   return (
+    <HelmetProvider>
     <BrowserRouter>
       <div className={isDarkMode ? "dark" : ""}>
         <div className="font-sans bg-white dark:bg-[#0D0D14] min-h-screen transition-colors duration-300">
@@ -35,6 +37,7 @@ const App = () => {
         </div>
       </div>
     </BrowserRouter>
+    </HelmetProvider>
   );
 };
 

@@ -1,8 +1,27 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 export default function AboutUs() {
   return (
     <>
+      <Helmet>
+        <title>Nosotros | Fluxo - Agencia Digital en Santo Domingo</title>
+        <meta
+          name="description"
+          content="Somos Fluxo, una agencia digital dominicana en Santo Domingo. Combinamos diseño web profesional con IA para llevar tu negocio al siguiente nivel."
+        />
+        <link rel="canonical" href="https://fluxo.do/nosotros" />
+        <meta
+          property="og:title"
+          content="Nosotros | Fluxo - Agencia Digital en Santo Domingo"
+        />
+        <meta
+          property="og:description"
+          content="Somos Fluxo, agencia digital en República Dominicana especializada en páginas web con IA."
+        />
+        <meta property="og:url" content="https://fluxo.do/nosotros" />
+      </Helmet>
+
       {/* Navbar simple */}
       <nav className="fixed top-0 left-0 w-full z-50 px-6 py-5 flex justify-between items-center bg-white/80 dark:bg-[#0D0D14]/80 backdrop-blur-sm border-b border-gray-100 dark:border-gray-800">
         <Link
